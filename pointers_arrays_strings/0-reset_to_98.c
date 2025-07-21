@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * reset_to_98 - this program resets the value of an int to 98
  *
@@ -6,8 +7,16 @@
  *
  * Return: Always 0
  */
-void reset_to_98(int *n)
+void update_to_98 (int *n)
 {
 	*n = 98;
-Return: (0);
 }
+int main()
+{
+    int value = 42;
+    printf("Before: %d\n", value);
+    update_to_98(&value);
+    printf("After: %d\n", value);
+    return 0;
+}
+
